@@ -6,5 +6,5 @@ function increaseCount() {
 
 function postText() {
     document.getElementById("posts").innerHTML = "<div class='post-time'>" + new Date() + "</div>";
-    document.getElementById("posts").innerHTML += "<div><br />" + document.getElementById("text_area").value + "</div>";
+    document.getElementById("posts").innerHTML += "<div class='post-content'><br />" + document.getElementById("text_area").value + "</div>";
 }
