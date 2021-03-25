@@ -19,11 +19,11 @@ function postText() {
 	}
 
     var quantity = document.getElementById("quantity").value;
-    for (var i = 0; i < quantity; i++) {
+    for (var j = 0; j < quantity; j++) {
         data.push("<div class='post-time'>" + new Date() + "</div><div class='post-content' style='color: " + color + "';><br />" + document.getElementById("text_area").value + "</div>");
     }
 
-    for (var i = 0; i < data.length; i++) {
+    for (var k = 0; k < data.length; k++) {
         document.getElementById("posts").innerHTML += data[i];
         document.getElementById("posts").innerHTML += "<br />";
     }
