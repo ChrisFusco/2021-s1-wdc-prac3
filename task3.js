@@ -18,9 +18,21 @@ function postText() {
 		}
 	}
 
+    var bold = document.getElementById("style_bold");
+	var italic = document.getElementById("style_italic");
+	var weight = "normal";
+	var style = "normal";
+
+	if (bold.checked) {
+		weight = "bold";
+	}
+	if (italic.checked) {
+		style = "italic";
+	}
+
     var quantity = document.getElementById("quantity").value;
     for (var j = 0; j < quantity; j++) {
-        data.push("<div class='post-time'>" + new Date() + "</div><div class='post-content' style='color: " + color + "';><br />" + document.getElementById("text_area").value + "</div>");
+        data.push("<div class='post-time'>" + new Date() + "</div><div class='post-content' style='color: " + color + "; font-weight: " + weight + "; font-style: " + style + "'><br />" + document.getElementById("text_area").value + "</div>");
     }
 
     for (var k = 0; k < data.length; k++) {
