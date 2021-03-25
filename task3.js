@@ -24,7 +24,7 @@ function postText() {
     }
 
     for (var k = 0; k < data.length; k++) {
-        document.getElementById("posts").innerHTML += data[i];
+        document.getElementById("posts").innerHTML += data[k];
         document.getElementById("posts").innerHTML += "<br />";
     }
 }
