@@ -35,7 +35,14 @@ function postText() {
         data.push("<div class='post-time'>" + new Date() + "</div><div class='post-content' style='color: " + color + "; font-weight: " + weight + "; font-style: " + style + "'><br />" + document.getElementById("text_area").value + "</div>");
     }
 
-    for (var k = 0; k < data.length; k++) {
+    showText();
+}
+
+function showText() {
+    document.getElementById("posts").innerHTML = "";
+    var slider = document.getElementById("slider").value;
+    
+    for (var k = 0; k < slider && k < data.length; k++) {
         document.getElementById("posts").innerHTML += data[k];
         document.getElementById("posts").innerHTML += "<br />";
     }
