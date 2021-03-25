@@ -42,3 +42,8 @@ function changeMenuScreen() {
         menu.style.display = "block";
     }
 }
+
+function changeBackground() {
+    var background = document.getElementById("body");
+    background.style.backgroundColor = document.getElementById("input").value;
+}

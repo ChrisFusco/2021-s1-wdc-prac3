@@ -10,7 +10,7 @@
 
     </head>
 
-    <body>
+    <body id="body">
         
         <div id="main" class="container">
             <button class="right" onclick="changeMenuScreen()">MENU</button>
@@ -40,7 +40,7 @@
         <div id="menu" class="container" style="display:none;">
             <button class="right" onclick="changeMenuScreen()">BACK</button>
             <p>&nbsp;</p>
-            <span>Background Color:</span><input type="text">
+            <span>Background Color:</span><input id="input" onblur="changeBackground()" type="text">
         </div>
         
     </body>
